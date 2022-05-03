@@ -8,70 +8,106 @@ import pandas as pd
 
 from PIL import Image
 st.set_page_config(page_title="embedder", page_icon=":baby_chick:", layout="wide")
-
-st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">{"WOMEN HARSAMENT ”"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#FF0000;font-size:36px;">{"AND "}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">{"CYBER CRIME”"}</h1>', unsafe_allow_html=True)
-
-st.write("python based streamlit app")
+#st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
+st.markdown(f'<h1 style="text-align: center;color:#FF0000;font-size:40px;">{"WOMEN HARRASMENT ”"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h2 style="text-align: center;color:#FF0000;font-size:36px;">{"&        "}</h2>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="text-align: center;color:#FF0000;font-size:40px;">{"CYBER CRIME”"}</h1>', unsafe_allow_html=True)
+link = '[gmail](https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCDCHTfVxQfGzTQClmwZJWwrDnGnChCrjXKZWrCFXVMjcxNcsJWdSsFFFhBbmJpWcCPsGV)'
+st.markdown(f'<h2 style="text-align: center;color:#FFFFFF;font-size:15px;">{"a streamlit based web app"}</h2>', unsafe_allow_html=True)
 
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone")
+    # "How would you like to be contacted?",
+    "Contact Details : ",
+    
+    ("PrateekRajesh","Email : prateekrajesh000@gmail.com ", "phone no : 8639818783")
+
     
 )
+# add_selectboxz = st.sidebar.selectbox(
+#     # "How would you like to be contacted?",
+#     "Contact Details : ",
+    
+#     ("PrateekRajesh","Email : prateekrajesh000@gmail.com ", "phone no : 8639818783")
+
+    
+# )
+with st.sidebar:
+ add_radio = st.selectbox(
+        "contact details: ",
+        ("RithwhickPraharsha", "Email : rithwhickpraharsha@gmail.com","phone no : 8712309567")
+    )
+with st.sidebar:
+ st.write("Mail Directly :")
+ with st.sidebar:
+     link = '[Prateek and rithwhick](https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRtswMzvchtsrrdWpHJrTMhmVzfTLBCZkkQXvDBlZZVWLbJZMcDnkWzVWKllxWlqxHJNLWl)'
+ st.markdown(link, unsafe_allow_html=True)
+ st.write("register complaints to govt:")
+ with st.sidebar:
+     link1 = '[cybercrime ](https://cybercrime.gov.in/)'
+ 
+ 
+     link2 = '[women harrasment](http://ncw.nic.in/front-page-icon/register-complaint)'
+ st.markdown(link1, unsafe_allow_html=True)
+ st.markdown(link2, unsafe_allow_html=True)
+# with st.sidebar:
 
 # Using "with" notation
-with st.sidebar:
-   
-    add_radio = st.selectbox(
-        "contact details: ",
-        ("prateek rajesh", "rithwhick")
-    )
-    st.markdown(f'<h1 style="color:#FF0000;font-size:px;">{"WOMEN HARSAMENT ”"}</h1>', unsafe_allow_html=True)
 
+# st.write("Contact Us :")
+# with st.sidebar:
+#  add_radio = st.selectbox(
+#         "contact details: ",
+#         ("prateek rajesh", "rithwhick")
+#     )
+#st.markdown(f'<h1 style="color:#FF0000;font-size:px;">{"WOMEN HARSAMENT ”"}</h1>', unsafe_allow_html=True)
 
-img = Image.open("woman.jpg")
+#    st.write("Contact Us")
+#    st.write("mail :")
+ 
+#    st.write("rithwhickpraharsha@gmail.com")
+#    st.write("prateekrajesh000@gmail.com")
 
-st.image(img,width=1025)
+img = Image.open("womanhars.jpg")
 st.subheader("Women harrasment")
+st.image(img,width=1025)
 
-components.html('<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="154406/"></script> <!-- end feedwind code -->',height=450)
+
+components.html('<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="154584/"></script> <!-- end feedwind code -->',height=600)
 st.subheader("Child abuse")
 img = Image.open("cabuse.jpg")
 
 st.image(img,width=1025)
 
-components.html('<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="154407/"></script> <!-- end feedwind code -->',height=450)
+components.html('<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="154579/"></script> <!-- end feedwind code -->',height=600)
 st.subheader("Cyber Bully")
 img = Image.open("Cyberbullying.png")
 
 st.image(img,width=1025)
-components.html('<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="154406/"></script> <!-- end feedwind code -->',height=450)
+components.html('<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="154580/"></script> <!-- end feedwind code -->',height=600)
 st.subheader("CyberCrime")
 img = Image.open("cyber.jpg")
 
 st.image(img,width=1025)
-components.html('<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="154406/"></script> <!-- end feedwind code -->',height=450)
+components.html('<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="154585/"></script> <!-- end feedwind code -->',height=600)
 
-uploaded_file = st.file_uploader("share your experiences in .txt formate ")
-if uploaded_file is not None:
+#uploaded_file = st.file_uploader("share your experiences in .txt formate ")
+#if uploaded_file is not None:
      # To read file as bytes:
-     bytes_data = uploaded_file.getvalue()
-     st.write(bytes_data)
+  #   bytes_data = uploaded_file.getvalue()
+ #    st.write(bytes_data)
 
      # To convert to a string based IO:
-     stringio = StringIO(uploaded_file.getvalue().decode("utf-16"))
-     st.write(stringio)
+ #    stringio = StringIO(uploaded_file.getvalue().decode("utf-16"))
+ #    st.write(stringio)
 
      # To read file as string:
-     string_data = stringio.read()
+ #    string_data = stringio.read()
      #st.write(string_data)
 
      # Can be used wherever a "file-like" object is accepted:
-     dataframe = pd.read_csv(uploaded_file)
-     st.write(dataframe)
+ #    dataframe = pd.read_csv(uploaded_file)
+ #    st.write(dataframe)
 
 
 # def theTweet(tweet_url):
@@ -85,4 +121,4 @@ if uploaded_file is not None:
 # if input:
 #     res = theTweet(input)
  
-#     components.html(res,height= 700)
+#     components.html(res,height= 700
